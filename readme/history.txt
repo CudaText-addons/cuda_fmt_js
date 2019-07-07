@@ -1,15 +1,3 @@
 
-2019.07.05
-+ add: function of plugin "JS Minify" is added here
-+ add: support all lexers which names start from "JavaScript"
-
-2019.05.04
-- fix: crash if config file has not all options
-
-2019.05.02
-+ added command "JSON Stringify" which was ported from https://github.com/Nadock/json_stringify
-+ updated JSBeautifier lib
-* change: now JSON config file is used
-
-2015.10
+2019.07.07
 initial version

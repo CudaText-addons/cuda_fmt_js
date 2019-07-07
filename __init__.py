@@ -1,8 +1,8 @@
 import sys
 import os
 import json
-from cudatext import *
 from .json_stringify import *
+from cuda_fmt import format_proc
 
 sys.path.append(os.path.dirname(__file__))
 import jsbeautifier

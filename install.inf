@@ -15,6 +15,7 @@ config=cuda_js_format.json
 caption=Minify JS
 method=do_minify
 lexers=JavaScript,JavaScript Babel,JavaScript (ES6),JavaScript (ES6)L
+force_all=1
 
 [fmt3]
 caption=Stringify JSON

@@ -6,13 +6,16 @@ subdir=cuda_fmt_js
 homepage=https://github.com/CudaText-addons/cuda_fmt_js
 
 [fmt1]
+caption=Format JS
 method=do_format
 lexers=JSON,JavaScript,JavaScript Babel,JavaScript (ES6),JavaScript (ES6)L
 
 [fmt2]
+caption=Minify JS
 method=do_minify
 lexers=JavaScript,JavaScript Babel,JavaScript (ES6),JavaScript (ES6)L
 
 [fmt3]
+caption=Stringify JSON
 method=do_stringify
 lexers=JSON

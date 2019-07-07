@@ -11,7 +11,7 @@ import slimit
 def options():
 
     op = jsbeautifier.default_options()
-    fn = format_proc.ini_filename()
+    fn = format_proc.ini_filename('cuda_js_format.json')
     if not os.path.isfile(fn):
         return op
 
@@ -49,4 +49,3 @@ def do_stringify(text):
     #else:
     #    indent = '\t'
     return invert_json_string(text)
-

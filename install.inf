@@ -9,6 +9,7 @@ homepage=https://github.com/CudaText-addons/cuda_fmt_js
 caption=Format JS
 method=do_format
 lexers=JSON,JavaScript,JavaScript Babel,JavaScript (ES6),JavaScript (ES6)L
+config=cuda_js_format.json
 
 [fmt2]
 caption=Minify JS

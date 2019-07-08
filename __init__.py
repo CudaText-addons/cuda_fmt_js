@@ -2,7 +2,7 @@ import sys
 import os
 import json
 from .json_stringify import *
-from cuda_fmt import format_proc
+from cuda_fmt import get_config_filename
 
 sys.path.append(os.path.dirname(__file__))
 import jsbeautifier
@@ -11,7 +11,7 @@ import slimit
 def options():
 
     op = jsbeautifier.default_options()
-    fn = format_proc.ini_filename('cuda_js_format.json')
+    fn = get_config_filename('Format JS')
     if not os.path.isfile(fn):
         return op
 

@@ -1,6 +1,6 @@
 [info]
-title=Formatters for JavaScript and JSON: Format JS, Minify JS, Stringify JSON
-desc=
+title=Formatters for JavaScript and JSON
+desc=Several formatters: Format JS, Minify JS, Stringify JSON
 type=cudatext-plugin
 subdir=cuda_fmt_js
 homepage=https://github.com/CudaText-addons/cuda_fmt_js

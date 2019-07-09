@@ -6,18 +6,18 @@ subdir=cuda_fmt_js
 homepage=https://github.com/CudaText-addons/cuda_fmt_js
 
 [fmt1]
-caption=Format JS
+caption=JS Format
 method=do_format
 lexers=regex:JSON.*,regex:JavaScript.*
 config=cuda_js_format.json
 
 [fmt2]
-caption=Minify JS
+caption=JS Minify
 method=do_minify
 lexers=regex:JavaScript.*
 force_all=1
 
 [fmt3]
-caption=Stringify JSON
+caption=JSON Stringify
 method=do_stringify
 lexers=regex:JSON.*

@@ -8,13 +8,13 @@ homepage=https://github.com/CudaText-addons/cuda_fmt_js
 [fmt1]
 caption=Format JS
 method=do_format
-lexers=JSON,JavaScript.*
+lexers=JSON,regex:JavaScript.*
 config=cuda_js_format.json
 
 [fmt2]
 caption=Minify JS
 method=do_minify
-lexers=JavaScript.*
+lexers=regex:JavaScript.*
 force_all=1
 
 [fmt3]

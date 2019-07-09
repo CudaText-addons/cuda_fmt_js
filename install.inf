@@ -1,6 +1,6 @@
 [info]
 title=Formatters for JavaScript and JSON
-desc=Several formatters: Format JS, Minify JS, Stringify JSON
+desc=Several formatters: JS Format, JS Minify, JS Sort Imports, JSON Stringify
 type=cudatext-plugin
 subdir=cuda_fmt_js
 homepage=https://github.com/CudaText-addons/cuda_fmt_js
@@ -18,6 +18,12 @@ lexers=regex:JavaScript.*
 force_all=1
 
 [fmt3]
+caption=JS Sort Imports
+method=do_sort_imports
+lexers=regex:JavaScript.*
+force_all=1
+
+[fmt4]
 caption=JSON Stringify
 method=do_stringify
 lexers=regex:JSON.*

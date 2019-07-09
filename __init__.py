@@ -2,6 +2,7 @@ import sys
 import os
 import json
 from .json_stringify import *
+from .sort_js_imports import sort_js_imports
 from cuda_fmt import get_config_filename
 
 sys.path.append(os.path.dirname(__file__))
@@ -11,7 +12,7 @@ import slimit
 def options():
 
     op = jsbeautifier.default_options()
-    fn = get_config_filename('Format JS')
+    fn = get_config_filename('JS Format')
     if not os.path.isfile(fn):
         return op
 
@@ -49,3 +50,8 @@ def do_stringify(text):
     #else:
     #    indent = '\t'
     return invert_json_string(text)
+
+def do_sort_imports(text):
+    lines = text.splitlines()
+    lines = sort_js_imports(lines)
+    return '\n'.join(lines)

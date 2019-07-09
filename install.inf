@@ -8,7 +8,7 @@ homepage=https://github.com/CudaText-addons/cuda_fmt_js
 [fmt1]
 caption=Format JS
 method=do_format
-lexers=JSON,regex:JavaScript.*
+lexers=regex:JSON.*,regex:JavaScript.*
 config=cuda_js_format.json
 
 [fmt2]
@@ -20,4 +20,4 @@ force_all=1
 [fmt3]
 caption=Stringify JSON
 method=do_stringify
-lexers=JSON
+lexers=regex:JSON.*

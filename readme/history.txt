@@ -1,3 +1,6 @@
 
+2019.07.09
++ allow all JavaScript* and JSON* lexers (using regex)
+
 2019.07.07
 initial version

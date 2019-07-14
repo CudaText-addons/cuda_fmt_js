@@ -12,7 +12,7 @@ import slimit
 def options():
 
     op = jsbeautifier.default_options()
-    fn = get_config_filename('JS Format')
+    fn = get_config_filename('JS Beautify')
     if not os.path.isfile(fn):
         return op
 

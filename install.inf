@@ -1,29 +1,34 @@
 [info]
 title=Formatters for JavaScript and JSON
-desc=Several formatters: JS Format, JS Minify, JS Sort Imports, JSON Stringify
+desc=Several formatters: JS Beautify, JS Minify, JS Sort Imports, JSON Stringify
 type=cudatext-plugin
 subdir=cuda_fmt_js
 homepage=https://github.com/CudaText-addons/cuda_fmt_js
 
 [fmt1]
-caption=JS Format
+caption=JS Beautify
 method=do_format
-lexers=regex:JSON.*,regex:JavaScript.*
-config=cuda_js_format.json
+lexers=regex:JavaScript.*
+config=cuda_fmt_js_beautify.json
 
 [fmt2]
+caption=JS Beautify (JSON)
+method=do_format
+lexers=regex:JSON.*
+
+[fmt3]
 caption=JS Minify
 method=do_minify
 lexers=regex:JavaScript.*
 force_all=1
 
-[fmt3]
+[fmt4]
 caption=JS Sort Imports
 method=do_sort_imports
 lexers=regex:JavaScript.*
 force_all=1
 
-[fmt4]
+[fmt5]
 caption=JSON Stringify
 method=do_stringify
 lexers=regex:JSON.*

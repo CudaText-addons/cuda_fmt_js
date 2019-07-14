@@ -1,4 +1,7 @@
 
+2019.07.14
+* split formatter "JS Format" to two: "JS Beautify", "JS Beautify (JSON)"; and rename its config file
+
 2019.07.10
 + add formatter "JS Sort Imports"
 * renamed other formatters

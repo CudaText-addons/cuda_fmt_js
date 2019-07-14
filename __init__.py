@@ -45,13 +45,10 @@ def do_minify(text):
 
 def do_stringify(text):
 
-    #if ed.get_prop(PROP_TAB_SPACES):
-    #    indent = ' '*ed.get_prop(PROP_TAB_SIZE)
-    #else:
-    #    indent = '\t'
     return invert_json_string(text)
 
 def do_sort_imports(text):
+
     lines = text.splitlines()
     lines = sort_js_imports(lines)
     return '\n'.join(lines)

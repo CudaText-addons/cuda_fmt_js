@@ -1,4 +1,7 @@
 
+2020.03.28
++ add missing (present in some Py versions) module "six"
+
 2019.07.14
 * split formatter "JS Format" to two: "JS Beautify", "JS Beautify (JSON)"; and rename its config file
 

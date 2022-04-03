@@ -1,4 +1,7 @@
 
+2022.04.03
++ add: support for new CudaFormatter's "Minify" command: one of JS formatters is marked as 'minifier'
+
 2020.03.28
 + add missing (present in some Py versions) module "six"
 

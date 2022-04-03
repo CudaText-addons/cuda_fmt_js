@@ -21,6 +21,7 @@ caption=JS Minify
 method=do_minify
 lexers=regex:JavaScript.*
 force_all=1
+minifier=1
 
 [fmt4]
 caption=JS Sort Imports

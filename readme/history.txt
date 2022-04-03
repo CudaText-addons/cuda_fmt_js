@@ -1,19 +1,20 @@
 
 2022.04.03
 + add: support for new CudaFormatter's "Minify" command: one of JS formatters is marked as 'minifier'
++ add: updated jsbeautifier library
 
 2020.03.28
 + add missing (present in some Py versions) module "six"
 
 2019.07.14
-* split formatter "JS Format" to two: "JS Beautify", "JS Beautify (JSON)"; and rename its config file
+* change: split formatter "JS Format" to two: "JS Beautify", "JS Beautify (JSON)"; and rename its config file
 
 2019.07.10
-+ add formatter "JS Sort Imports"
-* renamed other formatters
++ add: formatter "JS Sort Imports"
+* change: renamed other formatters
 
 2019.07.09
-+ allow all JavaScript* and JSON* lexers (using regex)
++ add: allow all JavaScript* and JSON* lexers (using regex)
 
 2019.07.07
 initial version

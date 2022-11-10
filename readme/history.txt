@@ -1,3 +1,5 @@
+2022.11.10
++ add: minifier for JSON
 
 2022.04.03
 + add: support for new CudaFormatter's "Minify" command: one of JS formatters is marked as 'minifier'

@@ -33,3 +33,10 @@ force_all=1
 caption=JSON Stringify
 method=do_stringify
 lexers=regex:JSON.*
+
+[fmt6]
+caption=JSON Minify
+method=do_minify_json
+lexers=JSON
+force_all=1
+minifier=1

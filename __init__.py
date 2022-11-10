@@ -52,3 +52,9 @@ def do_sort_imports(text):
     lines = text.splitlines()
     lines = sort_js_imports(lines)
     return '\n'.join(lines)
+
+def do_minify_json(text):
+
+    obj = json.loads(text, encoding='utf-8')
+    text = json.dumps(obj, separators=(',', ':'))
+    return text

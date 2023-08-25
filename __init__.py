@@ -58,3 +58,16 @@ def do_minify_json(text):
     obj = json.loads(text, encoding='utf-8')
     text = json.dumps(obj, separators=(',', ':'))
     return text
+
+def do_eslint(text):
+
+    import cudatext as app
+    import subprocess
+    fn = os.path.dirname(app.ed.get_filename())+os.sep+'_cudatext_eslint.js'
+    with open(fn, 'w', encoding='utf-8') as f:
+        f.write(text)
+    subprocess.call(['eslint', '--fix', fn], shell=False)
+    with open(fn, 'r', encoding='utf-8') as f:
+        text = f.read()
+    os.remove(fn)
+    return text

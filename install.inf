@@ -40,3 +40,9 @@ method=do_minify_json
 lexers=JSON
 force_all=1
 minifier=1
+
+[fmt7]
+caption=JS fix via ESLint
+method=do_eslint
+lexers=regex:JavaScript.*
+force_all=1

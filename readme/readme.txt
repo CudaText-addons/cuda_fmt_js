@@ -25,6 +25,13 @@ Note: if you're using Webpack aliases or a Babel alises plugin for top-level imp
 - "JSON Stringify"
 It's taken from https://github.com/Nadock/json_stringify
 
+- "JS fix via ESLint"
+It runs ESLint tool with '--fix' parameter.
+See this intro to ESLint:
+https://masteringjs.io/tutorials/eslint/fix
+You need the program (ie Node.js package) ESLint, so that "eslint" can be run from the command line. Only local installation of Node ESLint package is not enough.
+
+
 ------------------
 "JS Format" has configuration file. Use CudaFormatter commands to edit it.
 Options [default]

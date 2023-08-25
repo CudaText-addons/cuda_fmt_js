@@ -1,6 +1,6 @@
 [info]
 title=Formatters for JavaScript and JSON
-desc=Several formatters: JS Beautify, JS Minify, JS Sort Imports, JSON Stringify, ESLint
+desc=Several formatters: JS Beautify, JS Minify, JS Sort Imports, JSON Stringify, JSON Minify, JS fix via ESLint
 type=cudatext-plugin
 subdir=cuda_fmt_js
 homepage=https://github.com/CudaText-addons/cuda_fmt_js

@@ -63,7 +63,10 @@ def do_eslint(text):
 
     import cudatext as app
     import subprocess
-    fn = os.path.dirname(app.ed.get_filename())+os.sep+'_cudatext_eslint.js'
+    from cuda_fmt import fmtconfig # we require original filename
+
+    fn = os.path.join(os.path.dirname(fmtconfig.ed_filename), '_cud_eslint.js')
+    #print('eslint fn:', fn)
     with open(fn, 'w', encoding='utf-8') as f:
         f.write(text)
     subprocess.call(['eslint', '--fix', fn], shell=False)

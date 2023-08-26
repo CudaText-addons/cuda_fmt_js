@@ -70,7 +70,7 @@ def do_eslint(text):
     with open(fn, 'w', encoding='utf-8') as f:
         f.write(text)
     try:
-        subprocess.call(['eslint22', '--fix', fn], shell=False)
+        subprocess.call(['eslint', '--fix', fn], shell=False)
     except:
         app.msg_box('CudaFormatter: cannot find program "eslint" in system PATH', app.MB_OK+app.MB_ICONERROR)
         return

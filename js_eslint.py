@@ -16,6 +16,7 @@ def format_eslint(text):
     try:
         subprocess.call(['eslint', '--fix', fn], shell=False)
     except:
+        os.remove(fn)
         app.msg_box('CudaFormatter: cannot find program "eslint" in system PATH', 
             app.MB_OK+app.MB_ICONERROR)
         return

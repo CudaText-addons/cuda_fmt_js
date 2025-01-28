@@ -1,6 +1,6 @@
 Formatters for JavaScript and JSON.
 
-- "JS Format"
+- "JS Beautify"
 Format code for lexers JavaScript and JSON, using Python engine from jsbeautifier.org.
 
 - "JS Minify"

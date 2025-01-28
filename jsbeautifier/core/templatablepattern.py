@@ -35,6 +35,7 @@ class TemplateNames:
         self.handlebars = False
         self.php = False
         self.smarty = False
+        self.angular = False
 
 
 class TemplatePatterns:
@@ -78,7 +79,7 @@ class TemplatablePattern(Pattern):
 
     def read_options(self, options):
         result = self._create()
-        for language in ["django", "erb", "handlebars", "php", "smarty"]:
+        for language in ["django", "erb", "handlebars", "php", "smarty", "angular"]:
             setattr(result._disabled, language, not (language in options.templating))
         result._update()
         return result
@@ -114,7 +115,7 @@ class TemplatablePattern(Pattern):
             next = self._read_template()
 
         if self._until_after:
-            result += self._input.readUntilAfter(self._until_after)
+            result += self._input.readUntilAfter(self._until_pattern)
 
         return result
 
@@ -171,7 +172,6 @@ class TemplatablePattern(Pattern):
                         resulting_string or self.__patterns.django_value.read()
                     )
                 if not self._excluded.django:
-
                     resulting_string = (
                         resulting_string or self.__patterns.django_comment.read()
                     )

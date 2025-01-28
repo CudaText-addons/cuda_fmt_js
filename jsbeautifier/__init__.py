@@ -87,7 +87,6 @@ def beautify_file(file_name, opts=default_options()):
 
 
 def usage(stream=sys.stdout):
-
     print(
         "jsbeautifier.py@"
         + __version__
@@ -132,7 +131,7 @@ Output options:
                                    NOTE: Line continues until next wrap point is found.
  -n,  --end-with-newline           End output with newline
  --indent-empty-lines              Keep indentation on empty lines
- --templating                      List of templating languages (auto,none,django,erb,handlebars,php,smarty) ["auto"] auto = none in JavaScript, all in html
+ --templating                      List of templating languages (auto,none,django,erb,handlebars,php,smarty,angular) ["auto"] auto = none in JavaScript, all in html
  --editorconfig                    Enable setting configuration from EditorConfig
 
 Rarely needed options:
@@ -156,7 +155,6 @@ Rarely needed options:
 
 
 def main():
-
     argv = sys.argv[1:]
 
     try:
@@ -192,7 +190,7 @@ def main():
                 "space-in-empty-paren",
                 "space-in-paren",
                 "stdin",
-                "templating",
+                "templating=",
                 "unescape-strings",
                 "usage",
                 "version",

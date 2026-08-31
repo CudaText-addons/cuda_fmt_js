@@ -1,3 +1,6 @@
+2026.08.31
+- fix: formatter "JSON Minify" crashed on Python 3.9+, used deleted parameter
+
 2020.08.25
 + add: formatter "JS fix via ESLint"
 

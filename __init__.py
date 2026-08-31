@@ -56,7 +56,7 @@ def do_sort_imports(text):
 
 def do_minify_json(text):
 
-    obj = json.loads(text, encoding='utf-8')
+    obj = json.loads(text)
     text = json.dumps(obj, separators=(',', ':'))
     return text
 
